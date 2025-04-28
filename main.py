@@ -17,4 +17,6 @@ if __name__ == '__main__':
 # wheel, theme 2 x shift
 # PEP8 formatowanie kodu
 # ctrl alt l - formatowanie
-# 
+#
+# (.venv) PS C:\Users\cscomarch\PycharmProjects\PythonExcel28-04> python .\main.py
+# Hi, PyCharm
