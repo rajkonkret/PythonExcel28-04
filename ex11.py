@@ -30,5 +30,19 @@ ws['A1'].fill = PatternFill('lightVertical', start_color='38e3ff')
 # FILL_PATTERN_LIGHTUP = 'lightUp'
 # FILL_PATTERN_LIGHTVERTICAL = 'lightVertical'
 # FILL_PATTERN_MEDIUMGRAY = 'mediumGray'
+
+my_border = Side(border_style='thin', color="000000")
+ws['A1'].border = Border(
+    top=my_border, left=my_border, right=my_border, bottom=my_border
+)
+
+fill = PatternFill(
+    start_color='90EE90',
+    end_color="90EE90", fill_type='solid'
+)
+
+ws.conditional_formatting.add(
+    'G2:K16594', CellIsRule(operator='greaterThan', formula=[8], fill=fill, font=Font(color='FF0000'))
+)
 wb.save('videogamesales2.xlsx')
 wb.close()
